@@ -1,0 +1,44 @@
+.verses {
+    font-family: "Papyrus";
+    font-weight: 700;
+}
+
+.gospel {
+    padding: 10px;
+    background-image: url(https://image.freepik.com/free-photo/old-paper-texture-vintage-paper-background_262663-426.jpg);
+}
+
+body {
+    background-color: black;
+}
+
+.place {
+    color: white;
+    font-family: "Arial";
+    margin-top: 10px;
+    padding-left: 10px;
+    border-style: dotted;
+    border-width: 3px;
+    border-color: antiquewhite;
+}
+
+.placetxt {
+    color:white;
+}
+
+button {
+    padding: 7px;
+    margin-bottom : 10px;
+    font-family: "Arial";
+    font-weight: bold;
+    background-color: rgb(241, 55, 92);
+    border-radius: 10px;
+}
+ button:hover {
+    padding: 7px;
+    margin-bottom : 10px;
+    font-family: "Arial";
+    font-weight: bold;
+    background-color: rgb(253, 7, 56);
+    border-radius: 10px;
+}
