@@ -1,4 +1,4 @@
-# vr_reli515_project
+# immersive_reli515_project
 
 This project is an immesive learning experience for religious studies, created as a final project for RELI 515: Cultural History of New Testament Texts. 
 The project brings togehter immmersive elements with Gospel of Mark for the reader to better understand and appreciate the writings in their context, culture, space, and environment.
