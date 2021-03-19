@@ -15,9 +15,23 @@
                 </div>
             <div class="place">
                 <h3>About Gethsemane</h3>
-                <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
-                <button>Is it historically accurate?</button>
+                <p class="placetxt"> It is the place where Jesus underwent the agony in the garden and was arrested the night before his crucifixion. It is a place of great resonance in Christianity. </button>
             </div>
+            <button onclick="historicFacts()">Is it historically accurate?</button>
+            <div id="historicFacts">
+            </div>
+            <script>
+                let state = "hidden";
+                function historicFacts() {
+                    if (state === "hidden") {
+                        document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
+                        state = "visible"
+                    } else {
+                        document.getElementById("historicFacts").innerHTML = "";
+                        state = "hidden";
+                    }
+                }
+            </script>
         </div>
     </body>
 </html>

@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mount of Olives</title>
-        <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
-    </head>
-    <body>
-        <div>
-            <div class="gospel">
-                <h1 class="verses">Mark 27-31</h1>
-                <p class="verses" id="load"> <sup>2</sup><sup>7</sup> Then Jesus said to them, “All of you will fall away, because it is written: I will strike the shepherd, and the sheep will be scattered. <sup>2</sup><sup>8</sup> But after I have risen, I will go ahead of you to Galilee.” <sup>2</sup><sup>9</sup> Peter told him, “Even if everyone falls away, I will not.” <sup>3</sup><sup>0</sup> “Truly I tell you,” Jesus said to him, “today, this very night, before the rooster crows twice, you will deny me three times.” <sup>3</sup><sup>1</sup> But he kept insisting, “If I have to die with you, I will never deny you.” And they all said the same thing.
-                </p>
-                </div>
-            <div class="place">
-                <h3>About the Place of the Last Supper</h3>
-                <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
-                <button>Is it historically accurate?</button>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount of Olives</title>
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+</head>
+
+<body>
+    <div>
+        <div class="gospel">
+            <h1 class="verses">Mark 27-31</h1>
+            <p class="verses" id="load"> <sup>2</sup><sup>7</sup> Then Jesus said to them, “All of you will fall away,
+                because it is written: I will strike the shepherd, and the sheep will be scattered.
+                <sup>2</sup><sup>8</sup> But after I have risen, I will go ahead of you to Galilee.”
+                <sup>2</sup><sup>9</sup> Peter told him, “Even if everyone falls away, I will not.”
+                <sup>3</sup><sup>0</sup> “Truly I tell you,” Jesus said to him, “today, this very night, before the
+                rooster crows twice, you will deny me three times.” <sup>3</sup><sup>1</sup> But he kept insisting, “If
+                I have to die with you, I will never deny you.” And they all said the same thing.
+            </p>
         </div>
-    </body>
+        <div class="place">
+            <h3>About the Mount of Olives</h3>
+            <p class="placetxt">The Mount of Olives is frequently mentioned in the New Testament. From it Jesus entered
+                Jerusalem at the beginning of the last week of his life (Matthew 21:1; Mark 11:1). Two days before the
+                Crucifixion, in his so-called Olivet Discourse, he foretells the destruction of Jerusalem and the end of
+                the world (Matthew 24–25; Mark 13; Luke 21).</p>
+        </div>
+
+        <button onclick="historicFacts()">Is it historically accurate?</button>
+        <div id="historicFacts">
+        </div>
+        <script>
+            let state = "hidden";
+            function historicFacts() {
+                if (state === "hidden") {
+                    document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
+                    state = "visible"
+                } else {
+                    document.getElementById("historicFacts").innerHTML = "";
+                    state = "hidden";
+                }
+            }
+        </script>
+    </div>
+</body>
+
 </html>

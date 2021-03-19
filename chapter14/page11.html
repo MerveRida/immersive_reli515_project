@@ -13,11 +13,33 @@
                 <p class="verses" id="load"> <sup>6</sup><sup>6</sup> While Peter was in the courtyard below, one of the high priest’s maidservants came. <sup>6</sup><sup>7</sup> When she saw Peter warming himself, she looked at him and said, “You also were with Jesus, the man from Nazareth.” <sup>6</sup><sup>8</sup> But he denied it: “I don’t know or understand what you’re talking about.”
                 </p>
                 </div>
-            <div class="place">
-                <h3>About Saint Peter in Gallicantu</h3>
-                <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
-                <button>Is it historically accurate?</button>
-            </div>
+                <div class="place">
+                    <h3>About Saint Peter in Gallicantu</h3>
+                    <p class="placetxt">The church takes its name from the Latin word "Gallicantu", meaning cock's-crow. This is
+                        in commemoration of Peter's triple rejection of Jesus "... before the cock crows twice." It is an
+                        important destination for pilgrims because this place commemorates:
+                        <ul>
+                            <li>the appearance of Jesus before the High Priest Caiaphas</li>
+                            <li>the death sentence of Jesus imposed by the Sanhedrin</li>
+                            <li>the Denial of Peter and his repentance when the rooster crows</li>
+                        </ul>
+                    </p>
+                    <button onclick="historicFacts()">Is it historically accurate?</button>
+                    <div id="historicFacts">
+                    </div>
+                    <script>
+                        let state = "hidden";
+                        function historicFacts() {
+                            if (state === "hidden") {
+                                document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site.</p>";
+                                state = "visible"
+                            } else {
+                                document.getElementById("historicFacts").innerHTML = "";
+                                state = "hidden";
+                            }
+                        }
+                    </script>
+                </div>
         </div>
     </body>
 </html>

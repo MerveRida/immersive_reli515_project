@@ -13,11 +13,26 @@
                 <p class="verses" id="load"> <sup>3</sup><sup>2</sup> Then they came to a place named Gethsemane, and he told his disciples, “Sit here while I pray.” <sup>3</sup><sup>3</sup>He took Peter, James, and John with him, and he began to be deeply distressed and troubled. <sup>3</sup><sup>4</sup> He said to them, “I am deeply grieved to the point of death. Remain here and stay awake.” <sup>3</sup><sup>5</sup> He went a little farther, fell to the ground, and prayed that if it were possible, the hour might pass from him. <sup>3</sup><sup>6</sup> And he said, “Abba, Father! All things are possible for you. Take this cup away from me. Nevertheless, not what I will, but what you will.”
                 </p>
                 </div>
-            <div class="place">
-                <h3>About Gethsemane</h3>
-                <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
-                <button>Is it historically accurate?</button>
-            </div>
+                <div class="place">
+                    <h3>About Gethsemane</h3>
+                    <p class="placetxt"> It is the place where Jesus underwent the agony in the garden and was arrested the
+                        night before his crucifixion. It is a place of great resonance in Christianity. </button>
+                </div>
+                <button onclick="historicFacts()">Is it historically accurate?</button>
+                <div id="historicFacts">
+                </div>
+                <script>
+                    let state = "hidden";
+                    function historicFacts() {
+                        if (state === "hidden") {
+                            document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
+                            state = "visible"
+                        } else {
+                            document.getElementById("historicFacts").innerHTML = "";
+                            state = "hidden";
+                        }
+                    }
+                </script>
         </div>
     </body>
 </html>

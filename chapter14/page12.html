@@ -21,22 +21,33 @@
                 Jesus had spoken the word to him, “Before the rooster crows twice, you will deny me three times.” And he
                 broke down and wept.
             </p>
-        </div>
-        <div class="place">
-            <h3>About Saint Peter in Gallicantu</h3>
-            <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and
-                Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into
-                Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
-            <button onclick="historicFacts()">Is it historically accurate?</button>
-            <div class="historicFacts">
+            <div class="place">
+                <h3>About Saint Peter in Gallicantu</h3>
+                <p class="placetxt">The church takes its name from the Latin word "Gallicantu", meaning cock's-crow. This is
+                    in commemoration of Peter's triple rejection of Jesus "... before the cock crows twice." It is an
+                    important destination for pilgrims because this place commemorates:
+                    <ul>
+                        <li>the appearance of Jesus before the High Priest Caiaphas</li>
+                        <li>the death sentence of Jesus imposed by the Sanhedrin</li>
+                        <li>the Denial of Peter and his repentance when the rooster crows</li>
+                    </ul>
+                </p>
+                <button onclick="historicFacts()">Is it historically accurate?</button>
+                <div id="historicFacts">
+                </div>
+                <script>
+                    let state = "hidden";
+                    function historicFacts() {
+                        if (state === "hidden") {
+                            document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site.</p>";
+                            state = "visible"
+                        } else {
+                            document.getElementById("historicFacts").innerHTML = "";
+                            state = "hidden";
+                        }
+                    }
+                </script>
             </div>
-            <script>
-                function historicFacts() {
-                    document.getElementByClassName("historicFacts").appendChild(<p>It seems not</p>);
-                }
-            </script>
-
-        </div>
     </div>
 </body>
 

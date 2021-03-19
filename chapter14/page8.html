@@ -13,11 +13,26 @@
                 <p class="verses" id="load"> <sup>3</sup><sup>7</sup>Then he came and found them sleeping. He said to Peter, “Simon, are you sleeping? Couldn’t you stay awake one hour? <sup>3</sup><sup>8</sup> Stay awake and pray so that you won’t enter into temptation. The spirit is willing, but the flesh is weak.” <sup>3</sup><sup>9</sup>Once again he went away and prayed, saying the same thing. <sup>4</sup><sup>0</sup> And again he came and found them sleeping, because they could not keep their eyes open. They did not know what to say to him. <sup>4</sup><sup>1</sup> Then he came a third time and said to them, “Are you still sleeping and resting? Enough! The time has come. See, the Son of Man is betrayed into the hands of sinners. <sup>4</sup><sup>2</sup> Get up; let’s go. See, my betrayer is near.
                 </p>
                 </div>
-            <div class="place">
-                <h3>About Gethsemane</h3>
-                <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
-                <button>Is it historically accurate?</button>
-            </div>
+                <div class="place">
+                    <h3>About Gethsemane</h3>
+                    <p class="placetxt"> It is the place where Jesus underwent the agony in the garden and was arrested the
+                        night before his crucifixion. It is a place of great resonance in Christianity. </button>
+                </div>
+                <button onclick="historicFacts()">Is it historically accurate?</button>
+                <div id="historicFacts">
+                </div>
+                <script>
+                    let state = "hidden";
+                    function historicFacts() {
+                        if (state === "hidden") {
+                            document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
+                            state = "visible"
+                        } else {
+                            document.getElementById("historicFacts").innerHTML = "";
+                            state = "hidden";
+                        }
+                    }
+                </script>
         </div>
     </body>
 </html>

@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Place of Last Supper</title>
-        <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
-    </head>
-    <body>
-        <div>
-            <div class="gospel">
-                <h1 class="verses">Mark 22-26</h1>
-                <p class="verses" id="load"> <sup>2</sup><sup>2</sup> As they were eating, he took bread, blessed and broke it, gave it to them, and said, “Take it; this is my body.” <sup>2</sup><sup>3</sup> Then he took a cup, and after giving thanks, he gave it to them, and they all drank from it. <sup>2</sup><sup>4</sup> He said to them, “This is my blood of the covenant, which is poured out for many. <sup>2</sup><sup>5</sup> Truly I tell you, I will no longer drink of the fruit of the vine until that day when I drink it new in the kingdom of God.” <sup>2</sup><sup>6</sup> After singing a hymn, they went out to the Mount of Olives.
-                </p>
-                </div>
-            <div class="place">
-                <h3>About the Place of the Last Supper</h3>
-                <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
-                <button>Is it historically accurate?</button>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenacle</title>
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+</head>
+
+<body>
+    <div>
+        <div class="gospel">
+            <h1 class="verses">Mark 22-26</h1>
+            <p class="verses" id="load"> <sup>2</sup><sup>2</sup> As they were eating, he took bread, blessed and broke
+                it, gave it to them, and said, “Take it; this is my body.” <sup>2</sup><sup>3</sup> Then he took a cup,
+                and after giving thanks, he gave it to them, and they all drank from it. <sup>2</sup><sup>4</sup> He
+                said to them, “This is my blood of the covenant, which is poured out for many. <sup>2</sup><sup>5</sup>
+                Truly I tell you, I will no longer drink of the fruit of the vine until that day when I drink it new in
+                the kingdom of God.” <sup>2</sup><sup>6</sup> After singing a hymn, they went out to the Mount of
+                Olives.
+            </p>
         </div>
-    </body>
+        <div class="place">
+            <h3>About the Cenacle</h3>
+            <p class="placetxt">Cenacle, also known
+                as the "Upper Room"  was the first
+                Christian church according to Catholics.It is a room in the David's Tomb Compound in Jerusalem, and was traditionally held to be
+                the site of the Last Supper.</button>
+        </div>
+        <button onclick="historicFacts()">Is it historically accurate?</button>
+            <div id="historicFacts">
+            </div>
+            <script>
+                let state = "hidden";
+                function historicFacts() {
+                    if (state === "hidden") {
+                        document.getElementById("historicFacts").innerHTML = "<p>Scholars don't think this is the correct site</p>";
+                        state = "visible"
+                    } else {
+                        document.getElementById("historicFacts").innerHTML = "";
+                        state = "hidden";
+                    }
+                }
+            </script>
+    </div>
+</body>
+
 </html>
