@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gethsemane</title>
-        <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
-    </head>
-    <body>
-        <div>
-            <div class="gospel">
-                <h1 class="verses">Mark 43-52</h1>
-                <p class="verses" id="load"> <sup>4</sup><sup>3</sup> While he was still speaking, Judas, one of the Twelve, suddenly arrived. With him was a mob, with swords and clubs, from the chief priests, the scribes, and the elders. <sup>4</sup><sup>4</sup> His betrayer had given them a signal. “The one I kiss,” he said, “he’s the one; arrest him and take him away under guard.” <sup>4</sup><sup>5</sup> So when he came, immediately he went up to Jesus and said, “Rabbi! ” and kissed him. <sup>4</sup><sup>6</sup> They took hold of him and arrested him. <sup>4</sup><sup>7</sup> One of those who stood by drew his sword, struck the high priest’s servant, and cut off his ear. <sup>4</sup><sup>8</sup> Jesus said to them, “Have you come out with swords and clubs, as if I were a criminal, to capture me? <sup>4</sup><sup>9</sup> Every day I was among you, teaching in the temple, and you didn’t arrest me. But the Scriptures must be fulfilled.” <sup>5</sup><sup>0</sup> Then they all deserted him and ran away. <sup>5</sup><sup>1</sup> Now a certain young man, wearing nothing but a linen cloth, was following him. They caught hold of him, <sup>5</sup><sup>2</sup> but he left the linen cloth behind and ran away naked.
-                </p>
-                </div>
-            <div class="place">
-                <h3>About Gethsemane</h3>
-                <p class="placetxt"> It is the place where Jesus underwent the agony in the garden and was arrested the night before his crucifixion. It is a place of great resonance in Christianity. </button>
-            </div>
-            <button onclick="historicFacts()">Is it historically accurate?</button>
-            <div id="historicFacts">
-            </div>
-            <script>
-                let state = "hidden";
-                function historicFacts() {
-                    if (state === "hidden") {
-                        document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
-                        state = "visible"
-                    } else {
-                        document.getElementById("historicFacts").innerHTML = "";
-                        state = "hidden";
-                    }
-                }
-            </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gethsemane</title>
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+</head>
+
+<body>
+    <div>
+        <div class="gospel">
+            <h1 class="verses">Mark 43-52</h1>
+            <p class="verses" id="load"> <sup>4</sup><sup>3</sup> While he was still speaking, Judas, one of the Twelve,
+                suddenly arrived. With him was a mob, with swords and clubs, from the chief priests, the scribes, and
+                the elders. <sup>4</sup><sup>4</sup> His betrayer had given them a signal. “The one I kiss,” he said,
+                “he’s the one; arrest him and take him away under guard.” <sup>4</sup><sup>5</sup> So when he came,
+                immediately he went up to Jesus and said, “Rabbi! ” and kissed him. <sup>4</sup><sup>6</sup> They took
+                hold of him and arrested him. <sup>4</sup><sup>7</sup> One of those who stood by drew his sword, struck
+                the high priest’s servant, and cut off his ear. <sup>4</sup><sup>8</sup> Jesus said to them, “Have you
+                come out with swords and clubs, as if I were a criminal, to capture me? <sup>4</sup><sup>9</sup> Every
+                day I was among you, teaching in the temple, and you didn’t arrest me. But the Scriptures must be
+                fulfilled.” <sup>5</sup><sup>0</sup> Then they all deserted him and ran away. <sup>5</sup><sup>1</sup>
+                Now a certain young man, wearing nothing but a linen cloth, was following him. They caught hold of him,
+                <sup>5</sup><sup>2</sup> but he left the linen cloth behind and ran away naked.
+            </p>
         </div>
-    </body>
+        <div class="place">
+            <h3>About Gethsemane</h3>
+            <p class="placetxt"> It is the place where Jesus underwent the agony in the garden and was arrested the
+                night before his crucifixion. It is a place of great resonance in Christianity. </p>
+        
+        <button onclick="historicFacts()">Is it historically accurate?</button>
+        <div id="historicFacts">
+        </div>
+        <script>
+            let state = "hidden";
+            function historicFacts() {
+                if (state === "hidden") {
+                    document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
+                    state = "visible"
+                } else {
+                    document.getElementById("historicFacts").innerHTML = "";
+                    state = "hidden";
+                }
+            }
+        </script>
+        </div>
+    </div>
+</body>
+
 </html>
