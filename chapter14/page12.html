@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Saint Peter in Gallicantu</title>
-        <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
-    </head>
-    <body>
-        <div>
-            <div class="gospel">
-                <h1 class="verses">Mark 68-72</h1>
-                <p class="verses" id="load"> Then he went out to the entryway, and a rooster crowed. <sup>6</sup><sup>9</sup> When the maidservant saw him again, she began to tell those standing nearby, “This man is one of them.” <sup>7</sup><sup>0</sup> But again he denied it. After a little while those standing there said to Peter again, “You certainly are one of them, since you’re also a Galilean.” <sup>7</sup><sup>1</sup> Then he started to curse and swear, “I don’t know this man you’re talking about! ” <sup>7</sup><sup>2</sup> Immediately a rooster crowed a second time, and Peter remembered when Jesus had spoken the word to him, “Before the rooster crows twice, you will deny me three times.” And he broke down and wept.
-                </p>
-                </div>
-            <div class="place">
-                <h3>About Saint Peter in Gallicantu</h3>
-                <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
-                <button>Is it historically accurate?</button>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Peter in Gallicantu</title>
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+</head>
+
+<body>
+    <div>
+        <div class="gospel">
+            <h1 class="verses">Mark 68-72</h1>
+            <p class="verses" id="load"> Then he went out to the entryway, and a rooster crowed.
+                <sup>6</sup><sup>9</sup> When the maidservant saw him again, she began to tell those standing nearby,
+                “This man is one of them.” <sup>7</sup><sup>0</sup> But again he denied it. After a little while those
+                standing there said to Peter again, “You certainly are one of them, since you’re also a Galilean.”
+                <sup>7</sup><sup>1</sup> Then he started to curse and swear, “I don’t know this man you’re talking
+                about! ” <sup>7</sup><sup>2</sup> Immediately a rooster crowed a second time, and Peter remembered when
+                Jesus had spoken the word to him, “Before the rooster crows twice, you will deny me three times.” And he
+                broke down and wept.
+            </p>
         </div>
-    </body>
+        <div class="place">
+            <h3>About Saint Peter in Gallicantu</h3>
+            <p class="placetxt">Bethany is recorded in the New Testament as the home of the siblings Mary, Martha, and
+                Lazarus, as well as that of Simon the Leper. Jesus is reported to have lodged there after his entry into
+                Jerusalem, and it could be from Bethany that he parted from his disciples at the Ascension.</p>
+            <button onclick="historicFacts()">Is it historically accurate?</button>
+            <div class="historicFacts">
+            </div>
+            <script>
+                function historicFacts() {
+                    document.getElementByClassName("historicFacts").appendChild(<p>It seems not</p>);
+                }
+            </script>
+
+        </div>
+    </div>
+</body>
+
 </html>
