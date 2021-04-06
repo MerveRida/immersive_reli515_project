@@ -6,3 +6,7 @@ The code in this github is blended in a Google Earth project to use the 360 phot
 
 Link to project (in development): https://earth.google.com/earth/d/1mJl_DRSTJqYvKIzLOUnTrEeUiMIbJh6H?usp=sharing
 
+Resources used: 
+https://www.youtube.com/watch?v=dXgFjin1Vl8
+
+
