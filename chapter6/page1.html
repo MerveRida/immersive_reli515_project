@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinagogue Church</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+</head>
+
+<body>
+    <div>
+        <div class="gospel">
+            <h1 class="verses">Mark 1-3</h1>
+            <p class="verses" id="load"> <sup>1</sup> He left there and came to his hometown, and his disciples followed
+                him. <sup>2</sup> When the Sabbath came, he began to teach in the synagogue, and many who heard him were
+                astonished. “Where did this man get these things? ” they said. “What is this wisdom that has been given
+                to him, and how are these miracles performed by his hands? <sup>3</sup> Isn’t this the carpenter, the
+                son of Mary, and the brother of James, Joses, Judas, and Simon? And aren’t his sisters here with us? ”
+                So they were offended by him.
+            </p>
+        </div>
+        <script>
+            let state = "hidden";
+            function historicFactsFunc() {
+                if (state === "hidden") {
+                    jQuery("#historicFacts")[0].innerHTML = "<p>Scholars think this is most likely the historic site</p>";
+                    state = "visible";
+                } else {
+                    jQuery("#historicFacts")[0].innerHTML = "";
+                    state = "hidden";
+                }
+            };
+        </script>
+
+        <div class="place">
+            <h3>About the Sinagogue Church</h3>
+            <p class="placetxt">According to Christian tradition, the church is built on the ruins of the ancient
+                Nazareth synagogue where Jesus studied and prayed. In addition, it is where one Sabbath day Jesus went
+                to preach. </p>
+
+            <button onclick="historicFactsFunc()">Is it historically accurate?</button>
+            <div id="historicFacts">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

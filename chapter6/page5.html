@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabgha Church of the Loaves and Fish</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+</head>
+
+<body>
+    <div>
+        <div class="gospel">
+            <h1 class="verses">Mark 30-37</h1>
+            <p class="verses" id="load"> <sup>3</sup><sup>0</sup> The apostles gathered around Jesus and reported to him
+                all that they had done and taught. <sup>3</sup><sup>1</sup> He said to them, “Come away by yourselves to
+                a remote place and rest for a while.” For many people were coming and going, and they did not even have
+                time to eat. <sup>3</sup><sup>2</sup> So they went away in the boat by themselves to a remote place,
+                <sup>3</sup><sup>3</sup> but many saw them leaving and recognized them, and they ran on foot from all
+                the towns and arrived ahead of them. <sup>3</sup><sup>4</sup> When he went ashore, he saw a large crowd
+                and had compassion on them, because they were like sheep without a shepherd. Then he began to teach them
+                many things. <sup>3</sup><sup>5</sup> When it grew late, his disciples approached him and said, “This
+                place is deserted, and it is already late. <sup>3</sup><sup>6</sup> Send them away so that they can go
+                into the surrounding countryside and villages to buy themselves something to eat.”
+                <sup>3</sup><sup>7</sup> “You give them something to eat,” he responded. They said to him, “Should we go
+                and buy two hundred denarii worth of bread and give them something to eat? ”
+            </p>
+        </div>
+        <script>
+            let state = "hidden";
+            function historicFactsFunc() {
+                if (state === "hidden") {
+                    jQuery("#historicFacts")[0].innerHTML = "<p>Scholars think this is most likely the historic site</p>";
+                    state = "visible";
+                } else {
+                    jQuery("#historicFacts")[0].innerHTML = "";
+                    state = "hidden";
+                }
+            };
+        </script>
+
+        <div class="place">
+            <h3>About the Tabgha Church of the Loaves and Fish</h3>
+            <p class="placetxt">The Church of the Multiplication of the Loaves and Fish, shortened to the Church of the
+                Multiplication, is a Roman Catholic church located at Tabgha, on the northwest shore of the Sea of
+                Galilee in Israel. The modern church rests on the site of two earlier churches. </p>
+
+            <button onclick="historicFactsFunc()">Is it historically accurate?</button>
+            <div id="historicFacts">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

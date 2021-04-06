@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cenacle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
 </head>
 
@@ -23,7 +24,19 @@
                 them, and they prepared the Passover.
             </p>
         </div>
-        
+        <script>
+            let state = "hidden";
+            function historicFactsFunc() {
+                if (state === "hidden") {
+                    jQuery("#historicFacts")[0].innerHTML = "<p>Scholars don't think this is the correct site</p>";
+                    state = "visible";
+                } else {
+                    jQuery("#historicFacts")[0].innerHTML = "";
+                    state = "hidden";
+                }
+            };
+        </script>
+
         <div class="place">
             <h3>About the Cenacle</h3>
             <p class="placetxt">Cenacle, also known
@@ -32,21 +45,9 @@
                 traditionally held to be
                 the site of the Last Supper.</p>
 
-            <button onclick="historicFacts()">Is it historically accurate?</button>
+            <button onclick="historicFactsFunc()">Is it historically accurate?</button>
             <div id="historicFacts">
-            </div>
-            <script>
-                let state = "hidden";
-                function historicFacts() {
-                    if (state === "hidden") {
-                        document.getElementById("historicFacts").innerHTML = "<p>Scholars don't think this is the correct site</p>";
-                        state = "visible"
-                    } else {
-                        document.getElementById("historicFacts").innerHTML = "";
-                        state = "hidden";
-                    }
-                }
-            </script>
+            </div>     
         </div>
     </div>
 </body>

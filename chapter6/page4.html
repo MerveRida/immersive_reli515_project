@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John the Baptist Beheaded</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+</head>
+
+<body>
+    <div>
+        <div class="gospel">
+            <h1 class="verses">Mark 14-26</h1>
+            <p class="verses" id="load"> <sup>2</sup><sup>7</sup> The king immediately sent for an executioner and
+                commanded him to bring John’s head. So he went and beheaded him in prison, <sup>2</sup><sup>8</sup>
+                brought his head on a platter, and gave it to the girl. Then the girl gave it to her mother.
+                <sup>2</sup><sup>9</sup> When John’s disciples heard about it, they came and removed his corpse and
+                placed it in a tomb.
+            </p>
+        </div>
+        <script>
+            let state = "hidden";
+            function historicFactsFunc() {
+                if (state === "hidden") {
+                    jQuery("#historicFacts")[0].innerHTML = "<p>Scholars think this is most likely the historic site</p>";
+                    state = "visible";
+                } else {
+                    jQuery("#historicFacts")[0].innerHTML = "";
+                    state = "hidden";
+                }
+            };
+        </script>
+
+        <div class="place">
+            <h3>About the Tomb of John the Baptist</h3>
+            <p class="placetxt">According to Christian tradition, the church is built on the ruins of the ancient
+                Nazareth synagogue where Jesus studied and prayed. In addition, it is where one Sabbath day Jesus went
+                to preach. </p>
+
+            <button onclick="historicFactsFunc()">Is it historically accurate?</button>
+            <div id="historicFacts">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
