@@ -8,5 +8,7 @@ Link to project (in development): https://earth.google.com/earth/d/1mJl_DRSTJqYv
 
 Resources used: 
 https://www.youtube.com/watch?v=dXgFjin1Vl8
+https://www.youtube.com/playlist?list=PLLW-qoCMKQszhiNgcqMkzGJBNiolHyv1D
+
 
 
