@@ -5,11 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gethsemane</title>
         <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+        <script>
+            let state = "hidden";
+            function historicFacts() {
+                if (state === "hidden") {
+                    document.getElementById("historicFacts").innerHTML = "Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.";
+                    state = "visible"
+                } else {
+                    document.getElementById("historicFacts").innerHTML = "";
+                    state = "hidden";
+                }
+            }
+        </script>
     </head>
     <body>
         <div>
             <div class="gospel">
-                <h1 class="verses">Mark 37-42</h1>
+                <h1 class="verses">Mark 14:37-42</h1>
                 <p class="verses" id="load"> <sup>3</sup><sup>7</sup>Then he came and found them sleeping. He said to Peter, “Simon, are you sleeping? Couldn’t you stay awake one hour? <sup>3</sup><sup>8</sup> Stay awake and pray so that you won’t enter into temptation. The spirit is willing, but the flesh is weak.” <sup>3</sup><sup>9</sup>Once again he went away and prayed, saying the same thing. <sup>4</sup><sup>0</sup> And again he came and found them sleeping, because they could not keep their eyes open. They did not know what to say to him. <sup>4</sup><sup>1</sup> Then he came a third time and said to them, “Are you still sleeping and resting? Enough! The time has come. See, the Son of Man is betrayed into the hands of sinners. <sup>4</sup><sup>2</sup> Get up; let’s go. See, my betrayer is near.
                 </p>
                 </div>
@@ -19,20 +31,8 @@
                         night before his crucifixion. It is a place of great resonance in Christianity. </p>
                 
                 <button onclick="historicFacts()">Is it historically accurate?</button>
-                <div id="historicFacts">
-                </div>
-                <script>
-                    let state = "hidden";
-                    function historicFacts() {
-                        if (state === "hidden") {
-                            document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
-                            state = "visible"
-                        } else {
-                            document.getElementById("historicFacts").innerHTML = "";
-                            state = "hidden";
-                        }
-                    }
-                </script>
+                <p id="historicFacts" class="placetxt"></p>   
+                
                 </div>
         </div>
     </body>

@@ -26,9 +26,10 @@ body {
     color:white;
 }
 
-.historicFacts{
+#historicFacts{
     color:white;
 }
+
 
 button {
     padding: 7px;

@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gethsemane</title>
     <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+    <script>
+        let state = "hidden";
+        function historicFacts() {
+            if (state === "hidden") {
+                document.getElementById("historicFacts").innerHTML = "Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.";
+                state = "visible"
+            } else {
+                document.getElementById("historicFacts").innerHTML = "";
+                state = "hidden";
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div>
         <div class="gospel">
-            <h1 class="verses">Mark 43-52</h1>
+            <h1 class="verses">Mark 14:43-52</h1>
             <p class="verses" id="load"> <sup>4</sup><sup>3</sup> While he was still speaking, Judas, one of the Twelve,
                 suddenly arrived. With him was a mob, with swords and clubs, from the chief priests, the scribes, and
                 the elders. <sup>4</sup><sup>4</sup> His betrayer had given them a signal. “The one I kiss,” he said,
@@ -32,20 +44,7 @@
                 night before his crucifixion. It is a place of great resonance in Christianity. </p>
         
         <button onclick="historicFacts()">Is it historically accurate?</button>
-        <div id="historicFacts">
-        </div>
-        <script>
-            let state = "hidden";
-            function historicFacts() {
-                if (state === "hidden") {
-                    document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
-                    state = "visible"
-                } else {
-                    document.getElementById("historicFacts").innerHTML = "";
-                    state = "hidden";
-                }
-            }
-        </script>
+        <p id="historicFacts" class="placetxt"></p>   
         </div>
     </div>
 </body>

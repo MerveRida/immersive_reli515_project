@@ -7,30 +7,29 @@
     <title>Gennesaret</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+    <script>
+        let state = "hidden";
+        function historicFactsFunc() {
+            if (state === "hidden") {
+                jQuery("#historicFacts")[0].innerHTML = "Scholars think this is most likely the historic site";
+                state = "visible";
+            } else {
+                jQuery("#historicFacts")[0].innerHTML = "";
+                state = "hidden";
+            }
+        };
+    </script>
 </head>
 
 <body>
     <div>
         <div class="gospel">
-            <h1 class="verses">Mark 53-54</h1>
+            <h1 class="verses">Mark 6:53-54</h1>
             <p class="verses" id="load"> <sup>5</sup><sup>3</sup> When they had crossed over, they came to shore at
                 Gennesaret and anchored there. <sup>5</sup><sup>4</sup> As they got out of the boat, people immediately
                 recognized him. 
             </p>
         </div>
-        <script>
-            let state = "hidden";
-            function historicFactsFunc() {
-                if (state === "hidden") {
-                    jQuery("#historicFacts")[0].innerHTML = "<p>Scholars think this is most likely the historic site</p>";
-                    state = "visible";
-                } else {
-                    jQuery("#historicFacts")[0].innerHTML = "";
-                    state = "hidden";
-                }
-            };
-        </script>
-
         <div class="place">
             <h3>About Gennesaret</h3>
             <p class="placetxt">According to Christian tradition, the church is built on the ruins of the ancient
@@ -38,8 +37,7 @@
                 to preach. </p>
 
             <button onclick="historicFactsFunc()">Is it historically accurate?</button>
-            <div id="historicFacts">
-            </div>
+            <p id="historicFacts" class="placetxt"></p>
         </div>
     </div>
 </body>

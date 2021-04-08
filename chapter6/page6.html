@@ -7,12 +7,24 @@
     <title>Tabgha Church of the Loaves and Fish</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+    <script>
+        let state = "hidden";
+        function historicFactsFunc() {
+            if (state === "hidden") {
+                jQuery("#historicFacts")[0].innerHTML = "Scholars think this is most likely the historic site";
+                state = "visible";
+            } else {
+                jQuery("#historicFacts")[0].innerHTML = "";
+                state = "hidden";
+            }
+        };
+    </script>
 </head>
 
 <body>
     <div>
         <div class="gospel">
-            <h1 class="verses">Mark 30-37</h1>
+            <h1 class="verses">Mark 6:30-37</h1>
             <p class="verses" id="load"> <sup>3</sup><sup>8</sup> He asked them, “How many loaves do you
                 have? Go and see.” When they found out they said, “Five, and two fish.”
                 <sup>3</sup><sup>9</sup> Then he instructed them to have all the people sit down in
@@ -25,18 +37,7 @@
                 those who had eaten the loaves were five thousand men.
             </p>
         </div>
-        <script>
-            let state = "hidden";
-            function historicFactsFunc() {
-                if (state === "hidden") {
-                    jQuery("#historicFacts")[0].innerHTML = "<p>Scholars think this is most likely the historic site</p>";
-                    state = "visible";
-                } else {
-                    jQuery("#historicFacts")[0].innerHTML = "";
-                    state = "hidden";
-                }
-            };
-        </script>
+        
 
         <div class="place">
             <h3>About the Tabgha Church of the Loaves and Fish</h3>
@@ -47,8 +48,7 @@
                 Galilee in Israel. The modern church rests on the site of two earlier churches. </p>
 
             <button onclick="historicFactsFunc()">Is it historically accurate?</button>
-            <div id="historicFacts">
-            </div>
+            <p id="historicFacts" class="placetxt"></p>
         </div>
     </div>
 </body>

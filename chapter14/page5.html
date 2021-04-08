@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mount of Olives</title>
     <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+    <script>
+        let state = "hidden";
+        function historicFacts() {
+            if (state === "hidden") {
+                document.getElementById("historicFacts").innerHTML = "Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.";
+                state = "visible"
+            } else {
+                document.getElementById("historicFacts").innerHTML = "";
+                state = "hidden";
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div>
         <div class="gospel">
-            <h1 class="verses">Mark 27-31</h1>
+            <h1 class="verses">Mark 14:27-31</h1>
             <p class="verses" id="load"> <sup>2</sup><sup>7</sup> Then Jesus said to them, “All of you will fall away,
                 because it is written: I will strike the shepherd, and the sheep will be scattered.
                 <sup>2</sup><sup>8</sup> But after I have risen, I will go ahead of you to Galilee.”
@@ -30,20 +42,8 @@
         
 
         <button onclick="historicFacts()">Is it historically accurate?</button>
-        <div id="historicFacts">
-        </div>
-        <script>
-            let state = "hidden";
-            function historicFacts() {
-                if (state === "hidden") {
-                    document.getElementById("historicFacts").innerHTML = "<p>Scholars believe this site is the historically accurate site, since it has been mentioned in all four gospels.</p>";
-                    state = "visible"
-                } else {
-                    document.getElementById("historicFacts").innerHTML = "";
-                    state = "hidden";
-                }
-            }
-        </script>
+        <p id="historicFacts" class="placetxt"></p>   
+        
         </div>
     </div>
 </body>

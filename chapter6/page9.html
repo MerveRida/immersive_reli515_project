@@ -7,30 +7,30 @@
     <title>Gennesaret</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+    <script>
+        let state = "hidden";
+        function historicFactsFunc() {
+            if (state === "hidden") {
+                jQuery("#historicFacts")[0].innerHTML = "Scholars think this is most likely the historic site";
+                state = "visible";
+            } else {
+                jQuery("#historicFacts")[0].innerHTML = "";
+                state = "hidden";
+            }
+        };
+    </script>
 </head>
 
 <body>
     <div>
         <div class="gospel">
-            <h1 class="verses">Mark 55-56</h1>
+            <h1 class="verses">Mark 6:55-56</h1>
             <p class="verses" id="load">  <sup>5</sup><sup>5</sup> They hurried throughout that region and began to carry the sick
                 on mats to wherever they heard he was. <sup>5</sup><sup>6</sup> Wherever he went, into villages, towns,
                 or the country, they laid the sick in the marketplaces and begged him that they might touch just the end
                 of his robe. And everyone who touched it was healed.
             </p>
         </div>
-        <script>
-            let state = "hidden";
-            function historicFactsFunc() {
-                if (state === "hidden") {
-                    jQuery("#historicFacts")[0].innerHTML = "<p>Scholars think this is most likely the historic site</p>";
-                    state = "visible";
-                } else {
-                    jQuery("#historicFacts")[0].innerHTML = "";
-                    state = "hidden";
-                }
-            };
-        </script>
 
         <div class="place">
             <h3>About Gennesaret</h3>
@@ -39,8 +39,7 @@
                 to preach. </p>
 
             <button onclick="historicFactsFunc()">Is it historically accurate?</button>
-            <div id="historicFacts">
-            </div>
+            <p id="historicFacts" class="placetxt"></p>
         </div>
     </div>
 </body>

@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cenacle</title>
-        <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
-    </head>
-    <body>
-        <div>
-            <div class="gospel">
-                <h1 class="verses">Mark 17-21</h1>
-                <p class="verses" id="load"> <sup>1</sup><sup>7</sup> When evening came, he arrived with the Twelve. <sup>1</sup><sup>8</sup> While they were reclining and eating, Jesus said, “Truly I tell you, one of you will betray me — one who is eating with me.” <sup>1</sup><sup>9</sup> They began to be distressed and to say to him one by one, “Surely not I? ” <sup>2</sup><sup>0</sup> He said to them, “It is one of the Twelve — the one who is dipping bread in the bowl with me. <sup>2</sup><sup>1</sup> For the Son of Man will go just as it is written about him, but woe to that man by whom the Son of Man is betrayed! It would have been better for him if he had not been born.
-                </p>
-                </div>
-                <div class="place">
-                    <h3>About the Cenacle</h3>
-                    <p class="placetxt">Cenacle, also known
-                        as the "Upper Room"  was the first
-                        Christian church according to Catholics.It is a room in the David's Tomb Compound in Jerusalem, and was traditionally held to be
-                        the site of the Last Supper.</p>
-                
-                <button onclick="historicFacts()">Is it historically accurate?</button>
-                    <div id="historicFacts">
-                    </div>
-                    <script>
-                        let state = "hidden";
-                        function historicFacts() {
-                            if (state === "hidden") {
-                                document.getElementById("historicFacts").innerHTML = "<p>Scholars don't think this is the correct site</p>";
-                                state = "visible"
-                            } else {
-                                document.getElementById("historicFacts").innerHTML = "";
-                                state = "hidden";
-                            }
-                        }
-                    </script>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenacle</title>
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+    <script>
+        let state = "hidden";
+        function historicFacts() {
+            if (state === "hidden") {
+                document.getElementById("historicFacts").innerHTML = "Scholars don't think this is the correct site";
+                state = "visible"
+            } else {
+                document.getElementById("historicFacts").innerHTML = "";
+                state = "hidden";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <div class="gospel">
+            <h1 class="verses">Mark 14:17-21</h1>
+            <p class="verses" id="load"> <sup>1</sup><sup>7</sup> When evening came, he arrived with the Twelve.
+                <sup>1</sup><sup>8</sup> While they were reclining and eating, Jesus said, “Truly I tell you, one of you
+                will betray me — one who is eating with me.” <sup>1</sup><sup>9</sup> They began to be distressed and to
+                say to him one by one, “Surely not I? ” <sup>2</sup><sup>0</sup> He said to them, “It is one of the
+                Twelve — the one who is dipping bread in the bowl with me. <sup>2</sup><sup>1</sup> For the Son of Man
+                will go just as it is written about him, but woe to that man by whom the Son of Man is betrayed! It
+                would have been better for him if he had not been born.
+            </p>
         </div>
-    </body>
+        <div class="place">
+            <h3>About the Cenacle</h3>
+            <p class="placetxt">Cenacle, also known
+                as the "Upper Room" was the first
+                Christian church according to Catholics.It is a room in the David's Tomb Compound in Jerusalem, and was
+                traditionally held to be
+                the site of the Last Supper.</p>
+
+            <button onclick="historicFacts()">Is it historically accurate?</button>
+        </div>
+        <p id="historicFacts" class="placetxt"></p>
+    </div>
+</body>
+
 </html>

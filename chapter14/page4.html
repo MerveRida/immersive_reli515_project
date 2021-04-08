@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cenacle</title>
     <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1_6ExjKYgAG-znN7OQOsPO0BuHgMvqGxA">
+    <script>
+        let state = "hidden";
+        function historicFacts() {
+            if (state === "hidden") {
+                document.getElementById("historicFacts").innerHTML = "Scholars don't think this is the correct site";
+                state = "visible"
+            } else {
+                document.getElementById("historicFacts").innerHTML = "";
+                state = "hidden";
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div>
         <div class="gospel">
-            <h1 class="verses">Mark 22-26</h1>
+            <h1 class="verses">Mark 14:22-26</h1>
             <p class="verses" id="load"> <sup>2</sup><sup>2</sup> As they were eating, he took bread, blessed and broke
                 it, gave it to them, and said, “Take it; this is my body.” <sup>2</sup><sup>3</sup> Then he took a cup,
                 and after giving thanks, he gave it to them, and they all drank from it. <sup>2</sup><sup>4</sup> He
@@ -29,20 +41,8 @@
                 the site of the Last Supper.</p>
         
         <button onclick="historicFacts()">Is it historically accurate?</button>
-            <div id="historicFacts">
-            </div>
-            <script>
-                let state = "hidden";
-                function historicFacts() {
-                    if (state === "hidden") {
-                        document.getElementById("historicFacts").innerHTML = "<p>Scholars don't think this is the correct site</p>";
-                        state = "visible"
-                    } else {
-                        document.getElementById("historicFacts").innerHTML = "";
-                        state = "hidden";
-                    }
-                }
-            </script>
+        <p id="historicFacts" class="placetxt"></p>   
+            
         </div>
     </div>
 </body>
